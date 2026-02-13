@@ -1,74 +1,154 @@
-## Filima Patrick
+# **Patrick Filima**
+## Research Developer · Neuroinformatics Engineer
 
-A web developer and technology enthusiast creating commercial and user-friendly experiences with React.js.
+---
 
-[Email](mailto:filimapatrick@gmail.com) | [LinkedIn](https://www.linkedin.com/in/patrick-filima-91450817b/) | [Github](https://github.com/filimapatrick)
-✆ Phone: +2348104125890
+**Contact**  
+Port Harcourt, Nigeria  
+📧 [filimapatrick@gmail.com](mailto:filimapatrick@gmail.com)  
+📞 +234 810 412 5890  
+🌐 [filimapatrick.com](https://filimapatrick.com)  
+💻 [GitHub](https://github.com/filimapatrick)
 
-___
+---
 
-👩🏼‍💻 Engineering Experience.
+## **Professional Summary**
 
-___
-👩🏼‍💻 Frontend Intern @ glitzsoftwares.
+Patrick Filima is a Research Software Engineer specializing in neuroimaging and building software, data platforms, and reproducible pipelines that power neuroimaging research. Experienced in designing MRI protocol validation tools, pipeline error monitoring systems, FAIR data platforms, and cross-lab neuroinformatics infrastructure at Brainlife.io and the African Brain Data Network.
 
-**October 2021 - February 2022 (5 months)**
+Specialized in translating research needs into robust software systems using Python, React/Node, and neuroimaging workflows (FSL, FreeSurfer, BIDS, Nipype). Focused on building scalable tools that make brain data analysis more reliable, reproducible, and accessible across institutions and populations.
 
-  + Develop, manage, and implement source code to create web apps  that match the objectives and specifications outlined in the design and business documentation.
-  
- ___
- 
- 👩🏼‍💻 Frelancing Experience.
+---
 
-**February 2022 - June 2022 (5 months)**
+## **Core Technical Skills**
 
-  + I created a website for the Nigerian Youth Neuroscience Association using ReactJs.Users can dynamically login, and the site provides detailed information about the organization as well as upcoming events..
-   
-  ___
-   
-  **💻 Projects.**
-  
- ___
-    
- 
- 💻**Movie Application**
+**Neuroimaging & Scientific Workflows**  
+FSL, FreeSurfer, SPM, MNE-Python, EEGLAB, Nilearn, Nipype, BIDS
 
-+ Built a [movie](https://627bc24d3f081c14701a9486--regal-bonbon-8701fd.netlify.app/) app with React.js, Redux for state management, and  redux toolkit for the API request. This program gives you access to thousands of movies at your leisure.
-+ Created a [movie](https://glistening-salmiakki-58b407.netlify.app) series collection that allows users to filter movies based on category and genre. It provides you the week's most popular movies and people, as well as a YouTube preview for each series.
+**Programming & Software Engineering**  
+Python, TypeScript, JavaScript, React, Node.js, Next.js
 
- 💻 **Ecommerce Applications**
- 
-+ Built a product [app](https://profound-starlight-ed42a2.netlify.app) for ecommerce that uses redux hook for state management and semantic ui for styling. It retrieves a sequence of products using the product ID and displays each with its own unique details.
-+ Create a cloth store [app](https://ecommerce-with-stripe.netlify.app) that categorizes things, uses redux for state management, firebase for authentication, and integrates Stripe for the payment interface.
+**Data & Visualization**  
+Pandas, NumPy, Matplotlib, Plotly
 
-💻**Restaurant Applications**
- 
- + With React.js and the Redux library for state management, I created a [restaurant](https://628a95c763d6b21cda541df3--courageous-cascaron-aa8ddf.netlify.app/) page. This page allows you to explore available meal by category and order available meals.
+**Reproducibility & Data Engineering**  
+BIDS, DataLad, Docker, Git, FAIR data workflows, API integration
 
+**Research Infrastructure**  
+Pipeline monitoring, MRI protocol QA, dataset curation, cross-lab standardization
 
- 💻  **Whatsapp Applications**
- +   Created a Whatsapp clone that uses Firebase authentication to login users.
- 
- ___
+---
 
+## **Professional Experience**
 
-**SKILLS**
+### **Research Developer**
+**Brainlife.io** (University of Texas at Austin, Remote) · *2025 – Present*
+- Designed and built ezGOV, a platform for creating, managing, and distributing research data governance documents
+- Built a real-time MRI pipeline error monitoring dashboard (React/Node) reducing pipeline failures by 40%
+- Contributed to Dicompare, an MRI protocol validation tool for cross-lab standardization
+- Developed a mobile app for job tracking, dataset exploration, and pipeline notifications
+- Integrated document templates and APIs for interoperability across research data platforms
 
-+ HTML, CSS, JAVASCRIPT, REACT.JS,NEXT.JS,REDUX, FIREBASE
+### **Research Developer**
+**African Brain Data Network** (Remote, Nigeria) · *2021 – Present*
+- Built ABDN's web platform embedding FAIR principles, increasing researcher engagement by 65%
+- Led BIDS conversion, data collection, and QC for African MRI datasets
+- Built tools for EEG evaluation, participant scoring, and program evaluation
+- Mentored 200+ researchers in MRI preprocessing (BIDS, FSL, FreeSurfer)
+- Core team member on 3 successful grants supporting African neuroimaging infrastructure
 
-___
+### **Frontend & Data Platform Developer**
+**Lighthouse Counselling Hub** (Remote, Kenya) · *2024 – 2025*
+- Built a scalable counseling booking platform with analytics dashboards
+- Improved therapist operational efficiency by 50% through real-time data tools
+- Implemented SEO strategy that tripled organic traffic
 
+### **React Developer**
+**Lizard Global** (Remote, Netherlands & Malaysia) · *2022 – 2024*
+- Contributed to Aposto (staff scheduling tool) reducing scheduling conflicts by 45%
+- Developed Flexpackerz, a location-based coworking mobile app
+- Delivered production platforms using Strapi, Next.js, and Ant Design
 
+### **Graduate Assistant**
+**Neuroscience, University of Port Harcourt** · *2021 – 2025*
+- Supervised 35+ MSc and undergraduate neuroimaging projects
+- Led tutorials on signal processing, MNE-Python, and neuroanatomical mapping
 
- 📚 **Education**
+---
 
-___
+## **Selected Research Engineering Projects**
 
-📚 **Alx Africa software engineering in collaboration with Holberton school of software engineering.**
+**MRI Error Monitoring System** · Real-time pipeline tracking tool (Brainlife.io)
 
-2022 - 2023
+**Dicompare App** · DICOM protocol QA and standardization tool
 
+**African MRI BIDS Repository** · Dataset curation and QC framework
 
-📚 **University of Port Harcourt - B.Sc Human Anatomy.**
+**EEG Microstate Pipeline** · OpenNeuro processing workflow
 
-2014 - 2018
+**PD Thalamic Analysis Pipeline** · Automated volumetric & asymmetry workflow in FSL
+
+**FAIR African Brain Data Initiative** · Infrastructure for dataset sharing and governance
+
+---
+
+## **Education**
+
+**Wings Global Scholar** (MRI Graduate Programme)  
+*University of Oxford* · 2025–2026
+
+**M.Sc. Neuroscience**  
+*University of Port Harcourt* · 2021–2023  
+*Thesis: Volumetric and connectivity analyses of thalamic nuclei in Parkinson's disease*
+
+**B.Sc. Human Anatomy**  
+*University of Port Harcourt* · 2014–2019
+
+---
+
+## **Certifications**
+
+**Deep Learning in Neuroscience** · Coursera (2025)
+
+**Applied AI Lab: Computer Vision** · WorldQuant University (2025)
+
+---
+
+## **Grants & Fellowships**
+
+**Wings Global Scholar** (University of Oxford MRI Programme) · 2025–2026
+
+**African Brain Data Network Fellowship** · 2023–2025
+
+---
+
+## **Publications** (Selected)
+
+Pestilli, F., **Filima, P.**, et al. (2025). Brainlife.io Mobile: Neuroimaging Pipelines Monitoring and Control. *(Under Review)*
+
+Wogu, E., & **Filima, P.** (2025). Asymmetry in thalamic nuclei volume in Nigerian Parkinson's patients. *Journal of Experimental and Clinical Anatomy.*
+
+Wogu, E., **Filima, P.**, et al. (2025). FAIR African brain data: Challenges and opportunities. *Frontiers in Neuroinformatics.*
+
+Wogu, E., & **Filima, P.** (2024). Thalamic nuclei morphometry and handedness. *Nigerian Journal of Neuroscience.*
+
+Wogu, E., **Filima, P.**, et al. (2025). A labeled Clinical-MRI dataset of Nigerian brains. *Scientific Data.*
+
+---
+
+## **Teaching & Mentorship**
+
+- Delivered MRI preprocessing workshops (BIDS, FSL, FreeSurfer) to 200+ researchers across Africa
+- Mentored students in neuroimaging methods, improving research output and publication rates
+
+---
+
+## **Professional Affiliations**
+
+- African Brain Data Network
+- Brainlife.io Community Contributor  
+- Neuroscience Society of Nigeria
+
+---
+
+*Last updated: February 2026*
