@@ -4,44 +4,322 @@
   <meta charset="UTF-8">
   <title>{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1e2a3a 0%, #2d3b4f 100%);
+      color: #e1e8f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      width: 280px;
+      background: linear-gradient(180deg, #243447 0%, #1a252f 100%);
+      position: fixed;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+      border-right: 1px solid rgba(52, 152, 219, 0.2);
+    }
+
+    /* Profile Section */
+    .profile {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      border: 4px solid #3498db;
+      box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .profile h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .profile .subtitle {
+      color: #3498db;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(52, 152, 219, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #3498db;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(52, 152, 219, 0.3);
+    }
+
+    .contact-icon:hover {
+      background: rgba(52, 152, 219, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    /* Navigation */
+    .nav-menu {
+      flex: 1;
+    }
+
+    .nav-item {
+      display: block;
+      padding: 0.8rem 1rem;
+      margin: 0.3rem 0;
+      color: #b8c6d6;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+    }
+
+    .nav-item:hover, .nav-item.active {
+      background: rgba(52, 152, 219, 0.1);
+      color: #3498db;
+      border-left-color: #3498db;
+      padding-left: 1.2rem;
+    }
+
+    .nav-item.active {
+      background: rgba(52, 152, 219, 0.15);
+      box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 280px;
+      flex: 1;
+      padding: 2rem 3rem;
+      background: rgba(255, 255, 255, 0.02);
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    /* Content Styling */
+    .main-content h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .main-content h2 {
+      font-size: 2rem;
+      color: #3498db;
+      margin: 2.5rem 0 1.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .main-content h2::before {
+      content: "💼";
+      font-size: 1.5rem;
+    }
+
+    .main-content h3 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.8rem 0;
+    }
+
+    .main-content p {
+      color: #b8c6d6;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .main-content ul {
+      color: #b8c6d6;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .main-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .main-content a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .main-content a:hover {
+      color: #5dade2;
+      text-decoration: underline;
+    }
+
+    .main-content strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Section Icons */
+    h2:has-text("Professional Summary")::before { content: "👤"; }
+    h2:has-text("Core Technical Skills")::before { content: "🛠️"; }
+    h2:has-text("Professional Experience")::before { content: "💼"; }
+    h2:has-text("Selected Research")::before { content: "🔬"; }
+    h2:has-text("Education")::before { content: "🎓"; }
+    h2:has-text("Certifications")::before { content: "📜"; }
+    h2:has-text("Grants")::before { content: "🏆"; }
+    h2:has-text("Publications")::before { content: "📚"; }
+    h2:has-text("Teaching")::before { content: "👨‍🏫"; }
+    h2:has-text("Professional Affiliations")::before { content: "🤝"; }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom scrollbar for main content */
+    .main-content::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .main-content::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .main-content::-webkit-scrollbar-thumb {
+      background: rgba(52, 152, 219, 0.5);
+      border-radius: 4px;
+    }
+
+    .main-content::-webkit-scrollbar-thumb:hover {
+      background: rgba(52, 152, 219, 0.7);
+    }
+  </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>{{ site.title }}</h1>
-
-      <p>
-        <a href="{{ site.github.repository_url }}">
-          View the Project on GitHub
-          <small>{{ site.github.repository_nwo }}</small>
-        </a>
-      </p>
-
-      <!-- ✅ IMAGE INSERTED HERE -->
-      <div style="text-align:center; margin:20px 0;">
-        <img src="{{ '/assets/my_pictures.jpeg' | relative_url }}"
-             alt="Patrick Filima"
-             style="width:140px; border-radius:50%;">
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="{{ '/assets/my_pictures.jpeg' | relative_url }}" 
+             alt="Patrick Filima" class="profile-img">
+        <h1>FILIMA PATRICK</h1>
+        <p class="subtitle">Neuroscientist & Developer</p>
       </div>
 
-    </header>
+      <div class="contact-icons">
+        <a href="mailto:filimapatrick@gmail.com" class="contact-icon" title="Email">📧</a>
+        <a href="https://linkedin.com/in/patrickfilima" class="contact-icon" title="LinkedIn">💼</a>
+        <a href="tel:+2348104125890" class="contact-icon" title="Phone">📞</a>
+        <a href="https://github.com/filimapatrick" class="contact-icon" title="GitHub">💻</a>
+      </div>
 
-    <section>
+      <nav class="nav-menu">
+        <a href="#about" class="nav-item active">👤 About Me</a>
+        <a href="#skills" class="nav-item">🛠️ Skills</a>
+        <a href="#experience" class="nav-item">💼 Experience</a>
+        <a href="#research" class="nav-item">🔬 Research</a>
+        <a href="#education" class="nav-item">🎓 Education</a>
+        <a href="#publications" class="nav-item">📚 Publications</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
       {{ content }}
-    </section>
-
-    <footer>
-      <p>
-        This project is maintained by
-        <a href="{{ site.github.owner_url }}">
-          {{ site.github.owner_name }}
-        </a>
-      </p>
-
-      <p>
-        <small>Hosted on GitHub Pages — Theme by orderedlist</small>
-      </p>
-    </footer>
+    </main>
   </div>
+
+  <script>
+    // Smooth scrolling and active nav highlighting
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+        item.classList.add('active');
+        
+        const href = item.getAttribute('href');
+        if (href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // Highlight active section on scroll
+    window.addEventListener('scroll', () => {
+      const sections = ['about', 'skills', 'experience', 'research', 'education', 'publications'];
+      sections.forEach(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+            document.querySelector(`[href="#${section}"]`).classList.add('active');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

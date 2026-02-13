@@ -3,14 +3,7 @@
 
 ---
 
-**Contact**  
-Port Harcourt, Nigeria  
-📧 [filimapatrick@gmail.com](mailto:filimapatrick@gmail.com)  
-📞 +234 810 412 5890  
-🌐 [filimapatrick.com](https://filimapatrick.com)  
-💻 [GitHub](https://github.com/filimapatrick)
-
----
+<div id="about"></div>
 
 ## **Professional Summary**
 
@@ -19,6 +12,8 @@ Patrick Filima is a Research Software Engineer specializing in neuroimaging and 
 Specialized in translating research needs into robust software systems using Python, React/Node, and neuroimaging workflows (FSL, FreeSurfer, BIDS, Nipype). Focused on building scalable tools that make brain data analysis more reliable, reproducible, and accessible across institutions and populations.
 
 ---
+
+<div id="skills"></div>
 
 ## **Core Technical Skills**
 
@@ -38,6 +33,8 @@ BIDS, DataLad, Docker, Git, FAIR data workflows, API integration
 Pipeline monitoring, MRI protocol QA, dataset curation, cross-lab standardization
 
 ---
+
+<div id="experience"></div>
 
 ## **Professional Experience**
 
@@ -76,6 +73,8 @@ Pipeline monitoring, MRI protocol QA, dataset curation, cross-lab standardizatio
 
 ---
 
+<div id="research"></div>
+
 ## **Selected Research Engineering Projects**
 
 **MRI Error Monitoring System** · Real-time pipeline tracking tool (Brainlife.io)
@@ -91,6 +90,8 @@ Pipeline monitoring, MRI protocol QA, dataset curation, cross-lab standardizatio
 **FAIR African Brain Data Initiative** · Infrastructure for dataset sharing and governance
 
 ---
+
+<div id="education"></div>
 
 ## **Education**
 
@@ -121,6 +122,8 @@ Pipeline monitoring, MRI protocol QA, dataset curation, cross-lab standardizatio
 **African Brain Data Network Fellowship** · 2023–2025
 
 ---
+
+<div id="publications"></div>
 
 ## **Publications** (Selected)
 
